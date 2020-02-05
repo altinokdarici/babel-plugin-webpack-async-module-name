@@ -1,0 +1,2 @@
+import( /* webpackChunkName: 'module-a' */"./src/a.js");
+import( /* webpackChunkName: 'module-a', webpackPreload: true, webpackInclude: /\.json$/, webpackExclude: /\.noimport\.json$/, webpackMode: 'lazy', webpackPrefetch: true, webpackIgnore: true */"./src/a.js");

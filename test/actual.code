@@ -1,0 +1,10 @@
+importName("./src/a.js", { chunkName: "module-a" });
+importName("./src/a.js", {
+  chunkName: "module-a",
+  preload: true,
+  include: /\.json$/,
+  exclude: /\.noimport\.json$/,
+  mode: "lazy",
+  prefetch: true,
+  ignore: true
+});
