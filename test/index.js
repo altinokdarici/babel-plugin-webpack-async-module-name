@@ -15,8 +15,14 @@ function replaceLineBreak(string) {
 }
 
 describe("babel-plugin-webpack-async-module-name", () => {
-  const actual = readFileSync(path.join(__dirname, "actual.code"), "utf8");
-  const expected = readFileSync(path.join(__dirname, "expected.code"), "utf8");
+  const actual = readFileSync(
+    path.join(__dirname, "actual.code"),
+    "utf8"
+  ).trim();
+  const expected = readFileSync(
+    path.join(__dirname, "expected.code"),
+    "utf8"
+  ).trim();
 
   it("The transformation code should be equal to the expected code.", () => {
     const result = testPlugin(actual);
